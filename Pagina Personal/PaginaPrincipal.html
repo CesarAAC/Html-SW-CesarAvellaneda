@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página de Presentación</title>
+    <link rel="stylesheet" type="text/css" href="lib/style.css">
+</head>
+<div class="body">
+    <div class="container">
+        <h1>Mi Página de Presentación</h1>
+
+        <div class="section">
+            <h2>Presentación</h2>
+            <div class="content">
+                <img src="img/imagenSW.jpeg" alt="Tu Foto de Presentación" height="700">
+                <div class="contenedorTexto">
+                    Mi nombre es Cesar Avellaneda, tengo 19 años y soy estudiante de cuarto semestre de Ingenieria en sistemas de la universidad de Los Andes. A continuacion voy a 
+                    mostrarles mis gustos e intereses.
+                </div>
+                <img src="img/Imagen2SW.jpeg" alt="Tu Foto de Presentación" height="700">
+            </div>
+        </div>
+
+        <!-- Espacios para tus gustos, cada uno con una foto y una tabla enumerada -->
+        <div class="section">
+            <h2>Anime/Manga/Series</h2>
+            <div class="content">
+                <img src="img/Gusto1.png" alt="Gusto 1" width="350" height="350">
+                <div class="contenedorTexto">Una de las cosas que mas disfruto es leer o ver series que me gustan, mayormente son animes, 
+                    mangas o series, algunas de mis favoritas son:</div>
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Series Favoritas</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Berserk (manga)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>The boys (live action)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>One Piece (Anime/Manga)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Video Juegos</h2>
+            <div class="content">
+                <img src="img/gusto2.jpg" alt="Gusto 2" width="350" height="450">
+                <div class="contenedorTexto">La actividad en la cual paso la mayoria de mi tiempo, es jugar videojuegos, es una pasion que tengo desde que era muy niño y a pesar de que no tengo mucha variedad
+                    a la hora de escoger titulos para jugar, lo disfruto mucho. Algunos de mis juegos favoritos y que mas he jugado son:
+                    <a href="https://steamcommunity.com/profiles/76561198850475620/" target="_blank"> Perfil de Steam</a>
+                </div>
+                
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Juegos</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>The Binding of Isaac:Repentance</td>
+                        <td>Es la tercera expacion de juego "The Binding of Isaac:Rebirth", es un juego del genero de rogue-like desarrollado por edmun miller y estrenado en 2014,
+                            Repentance es la tercera y ultima expasión del juego lanzada en 2021, este tipo de juegos que se caracterizan por una aventura a través de 
+                            laberintos, a través de niveles generados por procedimientos al azar, a su vez que cada "run" comienza desde 0 y a medida que completas desafios y marcas
+                            vas desbloqueando objetos que hacen que las runs sean mas divertidas y hacen al juego virtualmente infinito. 
+                            <a href="https://store.steampowered.com/bundle/2405/The_Binding_of_Isaac_Rebirth_Complete_Bundle/" target="_blank"> Bundle en steam con todas sus expansiones</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>League of Legends</td>
+                        <td>League of Legends es un videjuego del genero MOBA desarrollado por la empresa de Riot Games, tiene varios modos de juego pero el principal consiste en 
+                            derrotar al equipo enemigo en un 5 vs 5, en un mapa con 3 lineas y una jungla que las separa, el objetivo principal para ganar es destruir el nexo rival al
+                        cual se accede despues de destruir las torretas que lo protegen. </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Tom Clancy's Rainbow Six® Siege</td>
+                        <td>Tom Clancy's Rainbow Six: Siege es un videojuego de disparos táctico en línea desarrollado por Ubisoft Montreal y distribuidor por Ubisoft.
+                            <a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/" target="_blank">Tom Clancy's Rainbow Six® Siege</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Ejercicio</h2>
+            <div class="content">
+                <video controls muted id="miVideo">
+                    <source src="img/gusto3.mp4" type="video/mp4">
+
+                </video>
+                <div class="contenedorTexto">Una gran parte de mi vida tambien es el hacer ejercicio, tanto en el gimnasio como desde que entre a la universidad un poco de calistenia, dos actividades las
+                    cuales disfruto mucho.
+                </div>
+                <img src="img/mano.jpeg" alt="Gusto 2" width="450" >
+            </div>
+        </div>
+    </div>
+    <h1>Formulario</h1>
+    <div class="contenedorForm">
+    <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        </select><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+</div>
+</html>
